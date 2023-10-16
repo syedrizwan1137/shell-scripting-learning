@@ -1,0 +1,41 @@
+#!/bin/bash
+
+
+#printing one element from array
+
+parbhani_details=("railwaystation" "darga" "stadium" "univercity")
+
+echo "third element of array is below"
+ 
+echo "${parbhani_details[2]}"
+
+#printing all element of array
+
+echo "all element of array is below"
+
+echo "${parbhani_details[*]}"
+
+#printing of array size/length
+
+echo "size of array is below"
+
+echo "${#parbhani_details[*]}"
+
+
+#saving array element in variable and printing that
+echo "printing all element of array"
+name=${parbhani_details[*]}
+
+echo "$name"
+
+echo "printing of 4th element of array"
+
+ name=${parbhani_details[3]}
+
+echo "$name"
+
+#long way to the printing all element
+
+echo "all element printing ${parbhani_details[0]} ${parbhani_details[1]} ${parbhani_details[2]} ${parbhani_details[3]}"
+
+echo "short way to printing of element ${parbhani_details[*]:0:3}"
