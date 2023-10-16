@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#declreaning key value array as below
+
+declare -A rizwan_details
+rizwan_details=([name]="rizwan" [age]=29 [height]=5.9 [sex]=male)
+
+#print all element from array
+
+echo "${rizwan_details[*]}"
+
+
+echo "age is ${rizwan_details[age]}"
