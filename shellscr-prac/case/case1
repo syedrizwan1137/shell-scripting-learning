@@ -1,0 +1,15 @@
+#!/bin/bash
+read -p "admi dekh ke paise" abc
+case $abc in
+sajjulala)
+echo "500me";;
+
+majulala)
+echo "100me";;
+
+kaleem)
+echo "2000me";;
+
+*)
+echo "bhag ja";;
+esac
