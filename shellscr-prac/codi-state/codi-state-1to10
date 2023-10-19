@@ -1,0 +1,27 @@
+#!/bin/bash
+
+read -p "konse konse number hain" abc
+
+if [ $abc == 1 ]
+then
+echo "number is one"
+
+elif [ $abc == 2 ]
+then
+echo "number is two"
+
+elif [ $abc == 3 ]
+then
+echo "number is three"
+
+elif [ $abc == 4 ]
+then
+echo "number is four"
+
+elif [ $abc == 5 ]
+then
+echo "number is five"
+
+else 
+echo "inviled input 1 to 5 number is allowed"
+fi

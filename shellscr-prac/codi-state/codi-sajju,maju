@@ -1,0 +1,19 @@
+#!/bin/bash
+
+read -p "bande ke hisab se sasta kharid sakte ho" abcd
+
+if [ $abcd == "sajjulala" ]
+then
+echo "app 500 me kharid sakte ho"
+
+elif [ $abcd == "majulala" ]
+then
+echo "app 1000me kharid sakte ho"
+
+elif [ $abcd == "kaleem" ]
+then
+echo "aap 2000 me kharid sakte ho"
+
+else
+echo "bhag ja sale"
+fi

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#string
+
+var1="khulja"
+
+read -p "tell me the pass" var2
+if [ $var1 -eq $var2 ]
+then
+echo "welcom to tajmahel"
+else
+echo "bhag bsdk"
+fi

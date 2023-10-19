@@ -1,0 +1,11 @@
+#!/bin/bash
+
+abc=$(find empty1)
+
+#echo $abc
+if [ $abc ]
+then
+echo "file exist"
+else
+echo "file doesnot exist "
+fi

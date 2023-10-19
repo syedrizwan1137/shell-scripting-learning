@@ -1,0 +1,12 @@
+ #!/bin/bash
+read -p "what is your age" age
+#age=20
+
+if [ $age -ge 18 ]
+
+then
+echo "you are allowed to vote in india"
+else
+echo "you are minor and not allowed to vote in india"
+
+fi

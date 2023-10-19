@@ -1,0 +1,11 @@
+ #!/bin/bash
+
+read -p "enter password" abc
+read -p "re enter password" abc1
+
+if [ $abc == $abc1 ]
+then
+echo "well come"
+else
+echo "get out"
+fi

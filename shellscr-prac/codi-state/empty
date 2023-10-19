@@ -1,0 +1,23 @@
+#!/bin/bash
+#read -p "give some value" v#
+#if [ $v  ]
+#then 
+#echo "hello"
+#else 
+#echo "hi"
+#fi
+
+
+
+if [ $var  ]
+then 
+
+
+echo "munaf"
+else 
+
+
+
+echo "ansari"
+
+fi

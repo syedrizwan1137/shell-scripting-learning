@@ -1,0 +1,15 @@
+#!/bin/bash
+
+declare -A number
+
+number=([1]=1 [2]=two [3]=three [4]=four [5]=five [abba]=dabba)
+
+read -p "what is your number" abc
+
+
+ if [ ${number[$abc]} ]
+then
+echo "hello"
+else 
+echo "please enter proper key"
+fi

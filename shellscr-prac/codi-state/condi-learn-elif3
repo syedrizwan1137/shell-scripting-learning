@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "enter your password" rizwan
+read -p "re enter your password" rizwan
+
+if [ rizwan == rizwan ]
+then
+echo "your are welcome"
+else
+echo "password is wrong"
+fi
