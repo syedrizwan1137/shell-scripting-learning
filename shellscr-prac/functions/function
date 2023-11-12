@@ -1,0 +1,60 @@
+#!/bin/bash
+
+function addition {
+echo "$(($1+$2))"
+}
+
+
+function substraction {
+echo "$(($1 - $2))"
+}
+
+function multiplection {
+echo $1 
+echo $2
+echo "  $(($1*$2))  "
+}
+
+function devision {
+echo "$(($1/$2))"
+}
+
+read -p "press the 1st number" v1
+read -p "press the 2d number" v2
+
+echo " for addition press 1"
+echo " for substraction press2"
+echo "for multiplection press3"
+echo "for devision press4"
+
+read press
+
+if [[ $press == 1 ]]
+then
+addition $v1 $v2
+
+elif [[ $press == 2 ]]
+then
+substraction $v1 $v2
+
+elif [[ $press == 3 ]]
+then
+multiplection $v1 $v2
+
+elif [[ $press == 4 ]]
+then
+devision $v1 $v2
+fi
+
+
+
+
+# with case
+
+case $press in
+1)addition $v1 $v2;;
+2)substraction $v1 $v2;;
+3)multiplection $v1 $v2;;
+4)devision $v1 $v2;;
+esac
+

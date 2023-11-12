@@ -1,0 +1,61 @@
+#!/bin/bash
+
+function clean {
+echo "the command to clean is  mvn clean, its delete the tareget folder"
+mvn clean
+
+}
+
+function compile {
+echo "the command to compile is mvn compile , compile command is use for convert the humen readable code to machine readable code"
+
+mvn compile
+}
+
+function test {
+echo "the command to test is mvn test ,junit test cases witch in java test to the all ready compile code"
+}
+
+function package {
+echo "the command to package is mvn pakage, it is used for creating the package from compiled code to jar or war"
+}
+
+function install {
+echo "the command to install is mvn install , it is used for copying target to .m2 folder" 
+}
+
+read -p "please enter clean if you want to clean" c1
+read -p "please enter compile/test/package/install the commad you want to run: " command
+ 
+if [[ $c1 == "mvn clean" ]]
+then
+clean
+fi
+
+
+
+if [[ $command == "mvn compile" ]]
+then
+compile
+
+elif [[ $command == "mvn test" ]]
+then
+compile
+test
+
+elif [[ $command == "mvn package" ]]
+then
+compile
+test
+package
+
+elif [[ $command == "mvn install" ]]
+then
+compile
+test
+package
+install
+
+else 
+echo "please provide the valide input"
+fi

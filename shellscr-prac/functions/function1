@@ -1,0 +1,17 @@
+#!/bin/bash 
+
+function addition {
+echo "$(($1 + $2))"
+}
+
+addition 1000 500
+addition 500 100
+
+
+#..................................................................
+
+function rizwan {
+echo " $1 $2 "
+}
+rizwan hello munaf
+rizwan hii ishaq
